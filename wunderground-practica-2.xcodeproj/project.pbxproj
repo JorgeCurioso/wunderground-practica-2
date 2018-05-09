@@ -13,6 +13,9 @@
 		3A0634BA20A3B62D009ECB04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A0634B920A3B62D009ECB04 /* Assets.xcassets */; };
 		3A0634BD20A3B62D009ECB04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0634BB20A3B62D009ECB04 /* LaunchScreen.storyboard */; };
 		3A0634C820A3B62D009ECB04 /* wunderground_practica_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0634C720A3B62D009ECB04 /* wunderground_practica_2Tests.swift */; };
+		3A0634D720A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0634D620A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json */; };
+		3A0634D920A3B981009ECB04 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0634D820A3B981009ECB04 /* WeatherService.swift */; };
+		3A0634DC20A3BE03009ECB04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0634DB20A3BE03009ECB04 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		3A0634C320A3B62D009ECB04 /* wunderground-practica-2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wunderground-practica-2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0634C720A3B62D009ECB04 /* wunderground_practica_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wunderground_practica_2Tests.swift; sourceTree = "<group>"; };
 		3A0634C920A3B62D009ECB04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0634D620A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currentConditionsDetroitSampleSuccessfulResponse.json; sourceTree = "<group>"; };
+		3A0634D820A3B981009ECB04 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		3A0634DB20A3BE03009ECB04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 				3A0634D420A3B6EC009ECB04 /* Storyboards */,
 				3A0634D520A3B6F8009ECB04 /* Resources */,
 				3A0634BE20A3B62D009ECB04 /* Info.plist */,
+				3A0634DA20A3B986009ECB04 /* Services */,
+				3A0634DD20A3BE06009ECB04 /* NetworkManager */,
 			);
 			path = "wunderground-practica-2";
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 		3A0634C620A3B62D009ECB04 /* wunderground-practica-2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				3A0634D620A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json */,
 				3A0634C720A3B62D009ECB04 /* wunderground_practica_2Tests.swift */,
 				3A0634C920A3B62D009ECB04 /* Info.plist */,
 			);
@@ -126,6 +135,22 @@
 				3A0634B920A3B62D009ECB04 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A0634DA20A3B986009ECB04 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A0634D820A3B981009ECB04 /* WeatherService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3A0634DD20A3BE06009ECB04 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				3A0634DB20A3BE03009ECB04 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0634D720A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0634DC20A3BE03009ECB04 /* NetworkManager.swift in Sources */,
 				3A0634B520A3B62B009ECB04 /* CurrentWeatherViewController.swift in Sources */,
+				3A0634D920A3B981009ECB04 /* WeatherService.swift in Sources */,
 				3A0634B320A3B62B009ECB04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
