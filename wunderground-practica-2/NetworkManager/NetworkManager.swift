@@ -15,17 +15,20 @@ class NetworkManager {
     /// - Parameters:
     ///   - url: url from which to retrieve data
     ///   - completion: response data
-    class func getDataFor(url: URL, completion: (Data) -> ()) {
+    class func getDataFor(url: URL, completion: @escaping (Data) -> Void) {
         
         let request = URLRequest(url: url)
         let session = URLSession(configuration: .default)
         
         session.dataTask(with: request) { (data, response, error) in
             
-            guard error == nil else {
+            guard error == nil,
+                let responseData = data else {
                 print("NetworkManager error: \(error.debugDescription)")
                 return
             }
+            
+            completion(responseData)
             
         }.resume()
     }

@@ -16,6 +16,7 @@
 		3A0634D720A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 3A0634D620A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json */; };
 		3A0634D920A3B981009ECB04 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0634D820A3B981009ECB04 /* WeatherService.swift */; };
 		3A0634DC20A3BE03009ECB04 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0634DB20A3BE03009ECB04 /* NetworkManager.swift */; };
+		3AA426D520A3C37D00705D90 /* CurrentWeatherConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA426D420A3C37D00705D90 /* CurrentWeatherConditions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		3A0634D620A3B8EF009ECB04 /* currentConditionsDetroitSampleSuccessfulResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currentConditionsDetroitSampleSuccessfulResponse.json; sourceTree = "<group>"; };
 		3A0634D820A3B981009ECB04 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		3A0634DB20A3BE03009ECB04 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3AA426D420A3C37D00705D90 /* CurrentWeatherConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherConditions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				3A0634BE20A3B62D009ECB04 /* Info.plist */,
 				3A0634DA20A3B986009ECB04 /* Services */,
 				3A0634DD20A3BE06009ECB04 /* NetworkManager */,
+				3AA426D420A3C37D00705D90 /* CurrentWeatherConditions.swift */,
 			);
 			path = "wunderground-practica-2";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				3A0634DC20A3BE03009ECB04 /* NetworkManager.swift in Sources */,
 				3A0634B520A3B62B009ECB04 /* CurrentWeatherViewController.swift in Sources */,
+				3AA426D520A3C37D00705D90 /* CurrentWeatherConditions.swift in Sources */,
 				3A0634D920A3B981009ECB04 /* WeatherService.swift in Sources */,
 				3A0634B320A3B62B009ECB04 /* AppDelegate.swift in Sources */,
 			);
